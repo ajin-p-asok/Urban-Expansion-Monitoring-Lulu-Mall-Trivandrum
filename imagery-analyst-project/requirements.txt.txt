@@ -1,0 +1,13 @@
+pystac-client
+planetary-computer
+odc-stac
+geopandas
+rasterio
+matplotlib
+numpy
+scikit-image
+rioxarray
+shapely
+scikit-learn
+ipykernel
+pyproj
