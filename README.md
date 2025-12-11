@@ -14,3 +14,27 @@ The tool uses a multi-sensor approach (Optical + SAR) to ensure robust detection
 * **Professional Visualization:** Generates overlay maps and False Color Composites (FCC).
 
 ## Repository Structure
+├── data/ # Contains roi.geojson ├── notebooks/ # Jupyter Notebooks (Analysis code) ├── output/ # Generated PNG maps and plots ├── reports/ # Final PDF Report ├── src/ # Helper scripts (if applicable) ├── requirements.txt # Python dependencies └── README.md
+
+## How to Run
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repo-url>
+    cd imagery-analyst-project
+    ```
+
+2.  **Install Dependencies:**
+    It is recommended to use a virtual environment.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the Analysis:**
+    Open the notebook `notebooks/01_Data_Acquisition_and_Analysis.ipynb` in Jupyter and run all cells.
+
+4.  **View Results:**
+    Check the `output/` directory for the generated change detection maps.
+
+## Methodologies
+* **Optical:** Utilizes the SWIR band (B11) to highlight concrete and asphalt.
+* **SAR:** Utilizes VV polarization for hard-target detection (double-bounce) and VH for volume scattering context.
